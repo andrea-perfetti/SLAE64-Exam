@@ -1,0 +1,2 @@
+Please insert the following string into the shellcode, replacing the '<CONNECT_PLACEHOLDER>' placeholder at line 24
+0xfeffff80c6e4fffd

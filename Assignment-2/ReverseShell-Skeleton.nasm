@@ -1,4 +1,4 @@
-; Filename: BindShell-Skeleton.nasm
+; Filename: ReverseShell-Skeleton.nasm
 ; Author  : Andrea Perfetti
 ; SLAE ID : PA-29059
 

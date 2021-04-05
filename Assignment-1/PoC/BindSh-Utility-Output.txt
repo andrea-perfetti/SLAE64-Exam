@@ -1,0 +1,3 @@
+Please insert the following string into the shellcode, 
+replacing the '<BIND_PLACEHOLDER>' placeholder at line 23
+0x1ce9fffd

@@ -34,6 +34,9 @@ Loop:
 	jmp short Loop
 
 Execute:
+	xor rbx, rbx
+	mov bl, 0x90
+	mov byte [rsi+rdx], bl	
 	jmp rsi
 
 ShellcodeToStack:

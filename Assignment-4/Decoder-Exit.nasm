@@ -11,8 +11,8 @@ _start:
 Decode:
 	pop rsi 				; RSI --> Pointer to start of the encoded shellcode
 
-	xor rdx, rdx			; RDX --> Offset to shellcode byte being scanned
-	xor rcx, rcx			; RCX --> Offset to actual shellcode being decoded
+	xor rdx, rdx
+	xor rcx, rcx
 
 Loop:
 	xor rbx, rbx			; Zeroing RBX

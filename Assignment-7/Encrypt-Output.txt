@@ -1,0 +1,12 @@
+Enter the password: --------------------------------------------------------
+Chosen password:  testme
+
+--------------------------------------------------------
+Random salt:  131WZOV1T1AL9UXR
+
+--------------------------------------------------------
+Encrypted payload: 
+
+b'131WZOV1T1AL9UXRgAAAAABgc1f_skP4ugupfRNaPShO6DY-HoEPgaoQrfzbwXudQB1Id4rnIvJqxIVONq809ylXQk9Eh1l1p430_CAgM0JB-AKRWwERsq2fpy3HYYaZI4RpfgiC4qcFznbUT1bJbg2GgtcF'
+
+--------------------------------------------------------
